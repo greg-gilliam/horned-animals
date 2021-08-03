@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 
 import creatures from './Creatures.js';
-import ImageList from './ImageList';
+import ImageList from './ImageList.js';
 
 class App extends Component {
   state = {
-    type: 'All',
+    type: 'All', 
+    horns: 'All',
   };
   handleChange = (event) => {
-    this.setState({ type: event.target.value });
+    this.setState({ horns: event.target.value });
   };
   render() { 
-    const filteredCreatures = creatures.filter(
-      (creature) => this.state.type === 'All' || creature.type === this.state.type
+    const filteredNumberCreatures = creatures.filter(
+      (creature) => this.state.horns === 'All' || creature.horns === Number(this.state.horns)
     );
+    
+    // const filteredCreatures = creatures.filter(
+    //   (creature) => this.state.type === 'All' || creature.type === this.state.type
+    // );
 
     return ( 
       <div className="App">
-        <h1>Choose the number of horns!</h1>
+        <h3>Choose the number of horns!</h3>
         <select onChange={this.handleChange}>
           <option value="All">All</option>
           <option value="1">1 horned creatures</option>
@@ -25,7 +30,7 @@ class App extends Component {
           <option value="3">3 horned creatures</option>
           <option value="100">100 horned creatures</option>
         </select>
-      <ImageList images={creatures} />
+      <ImageList images={filteredNumberCreatures} />
       </div>
      );
   }
