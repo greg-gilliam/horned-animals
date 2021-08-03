@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import creatures from './Creatures.js';
+import ImageItem from './ImageItem.js';
 
 class ImageList extends Component {
-    state = {  }
     render() { 
         return ( 
-            <h1>something here</h1>
+            <>
+                {this.props.boogers.map((item) => {
+                    return <ImageItem key={creatures.name} image={item} />;
+                })}
+            </>
          );
     }
 }
