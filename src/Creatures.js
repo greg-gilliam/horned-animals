@@ -1,4 +1,4 @@
-const images = [
+const creatures = [
   {
     id:1,
     url:
@@ -180,4 +180,4 @@ const images = [
     horns: 100
   }
 ];
-  export default images;
+  export default creatures;
