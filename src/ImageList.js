@@ -6,8 +6,10 @@ class ImageList extends Component {
     render() { 
         return ( 
             <>
-                {this.props.boogers.map((item) => {
-                    return <ImageItem key={creatures.name} image={item} />;
+                {this.props.images.map((item) => {
+                    return <ImageItem 
+                    key={creatures.name} 
+                    image={item} />;
                 })}
             </>
          );

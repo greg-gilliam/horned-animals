@@ -4,11 +4,16 @@ class ImageItem extends Component {
     state = {  }
     render() { 
         return ( 
-            <p>
-                {this.props.creature.name}
+            <>
+            <h1>
+                {this.props.image.name}
+            </h1>
+            <img alt="creature"
                 width="100"
-                src={this.props.creature.url}
-            </p>
+                src={this.props.image.url}
+                />
+
+            </>
          );
     }
 }
