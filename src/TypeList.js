@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
+import creatures from './Creatures.js';
 import ImageItem from './ImageItem.js';
 
-class ImageList extends Component {
+class TypeList extends Component {
     render() { 
-        const { images } = this.props;
         return ( 
             <>
-                {images.map((item) => {
+                {this.props.images.map((item) => {
                     return <ImageItem 
-                    key={item.id} 
-                    creature={item} />;
+                    key={creatures.type} 
+                    image={item} />;
                 })}
             </>
          );
     }
 }
  
-export default ImageList;
+export default TypeList;

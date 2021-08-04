@@ -7,7 +7,9 @@ const creatures = [
     description: "A unicorn and a narwhal nuzzling their horns",
     keyword: "narwhal",
     horns: 1,
+    type: "reality",
   },
+
   {
     id:2,
     url:
@@ -15,8 +17,10 @@ const creatures = [
     title: "Rhino Family",
     description: "Mother (or father) rhino with two babies",
     keyword: "rhino",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:3,
     url:
@@ -24,8 +28,10 @@ const creatures = [
     title: "Unicorn Head",
     description: "Someone wearing a creepy unicorn head mask",
     keyword: "unicorn",
-    horns: 1
+    horns: 1,
+    type: "fantastic",
   },
+
   {
     id:4,
     url:
@@ -33,7 +39,8 @@ const creatures = [
     title: "UniLego",
     description: "Lego figurine dressed in a unicorn outfit",
     keyword: "unilego",
-    horns: 1
+    horns: 1,
+    type: "playtime",
   },
   {
     id:5,
@@ -42,7 +49,8 @@ const creatures = [
     title: "Basically a unicorn",
     description: "A narwhal is basically a unicorn after all, right?",
     keyword: "narwhal",
-    horns: 1
+    horns: 1,
+    type: "reality",
   },
   {
     id:6,
@@ -51,8 +59,10 @@ const creatures = [
     title: "#truth",
     description: "The truth behind narwhals",
     keyword: "narwhal",
-    horns: 1
+    horns: 1,
+    type: "reality",
   },
+
   {
     id:7,
     url:
@@ -60,8 +70,10 @@ const creatures = [
     title: "Baby Rhino",
     description: "This is actually a figurine but it looks kinda real",
     keyword: "rhino",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:8,
     url:
@@ -70,8 +82,10 @@ const creatures = [
     description:
       "Three horns but still, horns. And who doesn't like The Land Before Time?",
     keyword: "triceratops",
-    horns: 3
+    horns: 3,
+    type: "playtime",
   },
+
   {
     id:9,
     url:
@@ -79,16 +93,20 @@ const creatures = [
     title: "Narwhal costume",
     description: "A woman wearing a blue narwhal costume",
     keyword: "narwhal",
-    horns: 1
+    horns: 1,
+    type: "playtime",
   },
+
   {
     id:10,
     url: "https://www.shopmascot.com/image/cache/mascotnew/new196-800x800.jpg",
     title: "Rhino costume",
     description: "Mascots have to get their costumes somewhere",
     keyword: "rhino",
-    horns: 2
+    horns: 2,
+    type: "playtime",
   },
+
   {
     id:11,
     url:
@@ -96,8 +114,10 @@ const creatures = [
     title: "Believe",
     description: "I believe in unicorns, do you?",
     keyword: "unicorn",
-    horns: 1
+    horns: 1,
+    type: "fantastic",
   },
+
   {
     id:12,
     url:
@@ -106,16 +126,20 @@ const creatures = [
     description:
       "These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?",
     keyword: "markhor",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:13,
     url: "https://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi",
     title: "Baby markhor",
     description: "Even the babies are adorable",
     keyword: "markhor",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:14,
     url:
@@ -123,8 +147,10 @@ const creatures = [
     title: "Mouflon",
     description: "Those horns though",
     keyword: "mouflon",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:15,
     url: "https://cdn.britannica.com/48/215948-050-A70D328C/Addax-nosomaculatus-found-in-Mauritania-Niger-Chad-Africa.jpg",
@@ -132,8 +158,10 @@ const creatures = [
     description:
       "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
     keyword: "addax",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:16,
     url:
@@ -141,8 +169,10 @@ const creatures = [
     title: "Baby mouflon",
     description: "The cuteness that is a baby mouflon asleep",
     keyword: "mouflon",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:17,
     url:
@@ -150,8 +180,10 @@ const creatures = [
     title: "Happy Jackson's Chameleon",
     description: "These are really common in Hawaii",
     keyword: "chameleon",
-    horns: 2
+    horns: 2,
+    type: "reality",
   },
+
   {
     id:18,
     url:
@@ -159,8 +191,10 @@ const creatures = [
     title: "Serious Jackson's Chameleon",
     description: "This one is very serious.",
     keyword: "chameleon",
-    horns: 3
+    horns: 3,
+    type: "reality",
   },
+
   {
     id:19,
     url:
@@ -168,8 +202,10 @@ const creatures = [
     title: "Horned Lizard",
     description: "Fave food: ants",
     keyword: "lizard",
-    horns: 100
+    horns: 100,
+    type: "reality",
   },
+
   {
     id:20,
     url:
@@ -177,7 +213,8 @@ const creatures = [
     title: "Smaug",
     description: "Fan illustration of Smaug from 'The Hobbit'",
     keyword: "dragon",
-    horns: 100
+    horns: 100,
+    type: "fantastic",
   }
 ];
   export default creatures;

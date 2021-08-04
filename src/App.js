@@ -1,35 +1,50 @@
 import React, { Component } from 'react';
 
+import './App.css'
 import creatures from './Creatures.js';
 import ImageList from './ImageList.js';
+import Dropdown from './Dropdown.js';
 
 class App extends Component {
   state = {
-    type: 'All', 
     horns: 'All',
+    type: 'All', 
   };
+
+  horns = ['All', 1, 2, 3, 100];
+  type = ['All', 'reality', 'fantastic', 'playtime'];
+
   handleChange = (event) => {
     this.setState({ horns: event.target.value });
   };
+
+  handleTypeChange = (event) => {
+    this.setState({ type: event.target.value });
+  };
+
   render() { 
     const filteredNumberCreatures = creatures.filter(
-      (creature) => this.state.horns === 'All' || creature.horns === Number(this.state.horns)
-    );
-    
-    // const filteredCreatures = creatures.filter(
-    //   (creature) => this.state.type === 'All' || creature.type === this.state.type
-    // );
+      (creature) => (this.state.horns === 'All' || creature.horns === Number(this.state.horns)) && (this.state.type === 'All' || creature.type === this.state.type)
 
-    return ( 
+    );
+
+      return ( 
       <div className="App">
-        <h3>Choose the number of horns!</h3>
-        <select onChange={this.handleChange}>
-          <option value="All">All</option>
-          <option value="1">1 horned creatures</option>
-          <option value="2">2 horned creatures</option>
-          <option value="3">3 horned creatures</option>
-          <option value="100">100 horned creatures</option>
-        </select>
+        <header>
+        <h2>Horned animals!</h2>
+        </header>
+        <h4 id='sub'>Filter by how many horns I have:</h4>
+        <Dropdown 
+          label="Horns"
+          options={this.horns}
+          changeEvent={this.handleChange}
+        />
+        <h4 id='sub'>Or filter by 'Am I found in: Reality? Fantasy? Playtime?'</h4>
+      <Dropdown
+        label="Type"
+        options={this.type}
+        changeEvent={this.handleTypeChange}
+      />
       <ImageList images={filteredNumberCreatures} />
       </div>
      );
