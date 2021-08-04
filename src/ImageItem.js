@@ -12,7 +12,6 @@ class ImageItem extends Component {
                 width="100"
                 src={this.props.image.url}
                 />
-
             </>
          );
     }

@@ -7,7 +7,7 @@ const creatures = [
     description: "A unicorn and a narwhal nuzzling their horns",
     keyword: "narwhal",
     horns: 1,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -18,7 +18,7 @@ const creatures = [
     description: "Mother (or father) rhino with two babies",
     keyword: "rhino",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -29,7 +29,7 @@ const creatures = [
     description: "Someone wearing a creepy unicorn head mask",
     keyword: "unicorn",
     horns: 1,
-    type: fantastic,
+    type: "fantastic",
   },
 
   {
@@ -40,7 +40,7 @@ const creatures = [
     description: "Lego figurine dressed in a unicorn outfit",
     keyword: "unilego",
     horns: 1,
-    type: playtime,
+    type: "playtime",
   },
   {
     id:5,
@@ -50,7 +50,7 @@ const creatures = [
     description: "A narwhal is basically a unicorn after all, right?",
     keyword: "narwhal",
     horns: 1,
-    type: reality,
+    type: "reality",
   },
   {
     id:6,
@@ -60,7 +60,7 @@ const creatures = [
     description: "The truth behind narwhals",
     keyword: "narwhal",
     horns: 1,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -71,7 +71,7 @@ const creatures = [
     description: "This is actually a figurine but it looks kinda real",
     keyword: "rhino",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -83,7 +83,7 @@ const creatures = [
       "Three horns but still, horns. And who doesn't like The Land Before Time?",
     keyword: "triceratops",
     horns: 3,
-    type: playtime,
+    type: "playtime",
   },
 
   {
@@ -94,7 +94,7 @@ const creatures = [
     description: "A woman wearing a blue narwhal costume",
     keyword: "narwhal",
     horns: 1,
-    type: playtime,
+    type: "playtime",
   },
 
   {
@@ -104,7 +104,7 @@ const creatures = [
     description: "Mascots have to get their costumes somewhere",
     keyword: "rhino",
     horns: 2,
-    type: playtime,
+    type: "playtime",
   },
 
   {
@@ -115,7 +115,7 @@ const creatures = [
     description: "I believe in unicorns, do you?",
     keyword: "unicorn",
     horns: 1,
-    type: fantastic,
+    type: "fantastic",
   },
 
   {
@@ -127,7 +127,7 @@ const creatures = [
       "These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?",
     keyword: "markhor",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -137,7 +137,7 @@ const creatures = [
     description: "Even the babies are adorable",
     keyword: "markhor",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -148,7 +148,7 @@ const creatures = [
     description: "Those horns though",
     keyword: "mouflon",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -159,7 +159,7 @@ const creatures = [
       "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
     keyword: "addax",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -170,7 +170,7 @@ const creatures = [
     description: "The cuteness that is a baby mouflon asleep",
     keyword: "mouflon",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -181,7 +181,7 @@ const creatures = [
     description: "These are really common in Hawaii",
     keyword: "chameleon",
     horns: 2,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -192,7 +192,7 @@ const creatures = [
     description: "This one is very serious.",
     keyword: "chameleon",
     horns: 3,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -203,7 +203,7 @@ const creatures = [
     description: "Fave food: ants",
     keyword: "lizard",
     horns: 100,
-    type: reality,
+    type: "reality",
   },
 
   {
@@ -214,7 +214,7 @@ const creatures = [
     description: "Fan illustration of Smaug from 'The Hobbit'",
     keyword: "dragon",
     horns: 100,
-    type: fantastic,
+    type: "fantastic",
   }
 ];
   export default creatures;

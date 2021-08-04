@@ -5,8 +5,8 @@ import ImageList from './ImageList.js';
 
 class App extends Component {
   state = {
-    type: 'All', 
     horns: 'All',
+    type: 'All', 
   };
   handleChange = (event) => {
     this.setState({ horns: event.target.value });
