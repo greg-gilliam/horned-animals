@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import creatures from './Creatures.js';
 import ImageItem from './ImageItem.js';
 
 class ImageList extends Component {
     render() { 
+        const { images } = this.props;
         return ( 
             <>
-                {this.props.images.map((item) => {
+                {images.map((item) => {
                     return <ImageItem 
-                    key={creatures.name} 
-                    image={item} />;
+                    key={item.id} 
+                    image={item.url} />;
                 })}
             </>
          );
