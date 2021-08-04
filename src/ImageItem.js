@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ImageItem extends Component {
     state = {  }
     render() { 
-        const { key, image } = this.props;
+        const { creature } = this.props;
         return ( 
             <>
             {/* <h1>
@@ -14,7 +14,7 @@ class ImageItem extends Component {
                 src={this.props.image.url} */}
                 {/* /> */}
             <p>
-                    <img alt={key} width="100" src={image} />
+                    <img alt={creature.title} width="100" src={creature.url} />
             </p>
             </>
          );

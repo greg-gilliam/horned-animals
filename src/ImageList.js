@@ -9,7 +9,7 @@ class ImageList extends Component {
                 {images.map((item) => {
                     return <ImageItem 
                     key={item.id} 
-                    image={item.url} />;
+                    creature={item} />;
                 })}
             </>
          );

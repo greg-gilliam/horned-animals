@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import './App.css'
 import creatures from './Creatures.js';
 import ImageList from './ImageList.js';
 import Dropdown from './Dropdown.js';
@@ -11,7 +12,7 @@ class App extends Component {
   };
 
   horns = ['All', 1, 2, 3, 100];
-  type = ['reality', 'fantastic', 'playtime'];
+  type = ['All', 'reality', 'fantastic', 'playtime'];
 
   handleChange = (event) => {
     this.setState({ horns: event.target.value });
@@ -29,12 +30,16 @@ class App extends Component {
 
       return ( 
       <div className="App">
-        <h3>Choose the number of horns!</h3>
+        <header>
+        <h2>Horned animals!</h2>
+        </header>
+        <h4 id='sub'>Filter by how many horns I have:</h4>
         <Dropdown 
           label="Horns"
           options={this.horns}
           changeEvent={this.handleChange}
         />
+        <h4 id='sub'>Or filter by 'Am I found in: Reality? Fantasy? Playtime?'</h4>
       <Dropdown
         label="Type"
         options={this.type}
